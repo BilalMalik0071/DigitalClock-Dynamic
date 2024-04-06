@@ -5,14 +5,25 @@ function clock() {
 setInterval(clock,1000)
 
 function Mode() {
+    
     console.log(btn.innerHTML);
     if (btn.innerHTML===`<i class="fa-solid fa-moon fa-beat-fade fa-xl"></i>`) {
         btn.innerHTML=`<i class="fa-solid fa-sun fa-beat-fade"></i>`
         outerdiv.style.background="black"
         c1.style.color="white"
+        
+        ma1.classList.remove("border-black")
+        ma1.classList.add("border-white")
+        
     }else{
         btn.innerHTML=`<i class="fa-solid fa-moon fa-beat-fade fa-xl"></i>`
         outerdiv.style.background="white"
         c1.style.color="black"
+        ma1.classList.add("border-black")
+        ma1.classList.remove("border-white")
+        
+        
     }
 }
+
+
